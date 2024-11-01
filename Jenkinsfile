@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build Image'){
             steps {
-                sh 'docker build -t nodejs-package:${BUILD_NUMBER} .'
+                sh 'docker build -t nodejs-project:${BUILD_NUMBER} .'
             }       
         }
 
