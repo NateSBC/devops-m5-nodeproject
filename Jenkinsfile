@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'docker stop node-project || true'
                 sh 'docker rm node-project || true'
+                sh 'docker rm -f $(docker ps -aq) || true'
             }
         }
 
