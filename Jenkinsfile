@@ -3,9 +3,8 @@ pipeline {
     stages {
         stage('Stop node-project'){
             steps {
-                sh 'docker stop node-project || true'
-                sh 'docker rm node-project || true'
-                sh 'docker rm -f $(docker ps -aq) || true'
+                sh 'docker stop nodejs-project || true'
+                sh 'docker rm nodejs-project || true'
             }
         }
 
